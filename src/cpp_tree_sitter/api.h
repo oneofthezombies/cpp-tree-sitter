@@ -69,11 +69,11 @@ auto operator<<(std::ostream &os, const ts::Point &point) -> std::ostream &;
 class Node {
 public:
   explicit Node(TSNode &&ts_node) noexcept;
-  Node(const ts::Node &) = delete;
+  Node(const ts::Node &) = default;
   Node(ts::Node &&) noexcept = default;
   ~Node() noexcept = default;
 
-  auto operator=(const ts::Node &) -> ts::Node & = delete;
+  auto operator=(const ts::Node &) -> ts::Node & = default;
   auto operator=(ts::Node &&) noexcept -> ts::Node & = default;
 
   auto StartByte() const noexcept -> uint32_t;
