@@ -19,6 +19,7 @@ cc_library(
         "third_party/tree-sitter-0.22.2/lib/include",
         "third_party/tree-sitter-0.22.2/lib/src",
     ],
+    visibility = ["//visibility:public"],
 )
 
 cc_library(
@@ -34,6 +35,7 @@ cc_library(
     includes = [
         "src",
     ],
+    visibility = ["//visibility:public"],
     deps = [
         ":tree_sitter",
     ],
