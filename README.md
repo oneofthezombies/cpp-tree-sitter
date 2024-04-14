@@ -1,7 +1,6 @@
 # C++ Tree-sitter
 
-C++ Tree-sitter binding.  
-Type and memory safety oriented implementation.  
+Type and memory safety oriented C++ Tree-sitter binding implementation. 
 
 ## Features
 
