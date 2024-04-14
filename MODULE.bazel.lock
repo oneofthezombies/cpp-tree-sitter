@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 6,
-  "moduleFileHash": "bfbfda11f5e0d32e5eafd9a1e14b53a8d81dd22594fc78827d0128ac28891197",
+  "moduleFileHash": "3549e0785a268a99f0d6504a80102d5338eff04fdd996d4b84d24db130287077",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -17,10 +17,10 @@
   },
   "moduleDepGraph": {
     "<root>": {
-      "name": "cpp-tree-sitter",
-      "version": "0.1.1",
+      "name": "cpp_tree_sitter",
+      "version": "0.1.2",
       "key": "<root>",
-      "repoName": "cpp-tree-sitter",
+      "repoName": "cpp_tree_sitter",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [],
       "extensionUsages": [],
