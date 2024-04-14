@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "bazelbuild.vscode-bazel",
+    "llvm-vs-code-extensions.vscode-clangd",
+    "stackbuild.bazel-stack-vscode",
+    "usernamehw.errorlens"
+  ]
+}

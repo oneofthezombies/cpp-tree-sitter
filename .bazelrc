@@ -1,0 +1,5 @@
+build --macos_minimum_os=10.15
+build --copt=-fno-exceptions
+
+build:debug --compilation_mode=dbg
+build:debug --spawn_strategy=local
