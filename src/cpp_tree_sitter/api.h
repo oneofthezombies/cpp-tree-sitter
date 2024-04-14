@@ -84,7 +84,7 @@ public:
   auto Type() const noexcept -> std::string_view;
   auto GrammarSymbol() const noexcept -> ts::Symbol;
   auto GrammarType() const noexcept -> std::string_view;
-  auto String() const noexcept -> ts::String;
+  [[nodiscard]] auto String() const noexcept -> ts::String;
   auto Eq(const ts::Node &other) const noexcept -> bool;
   auto IsNull() const noexcept -> bool;
   auto IsExtra() const noexcept -> bool;
@@ -160,7 +160,7 @@ public:
   auto IsNull() const noexcept -> bool;
 
   // Consumes the `TSTreePtr` and returns a unique pointer to it.
-  auto IntoRaw() noexcept -> ts::TSTreePtr;
+  [[nodiscard]] auto IntoRaw() noexcept -> ts::TSTreePtr;
 
   static auto Null() noexcept -> ts::Tree;
 
@@ -275,10 +275,12 @@ public:
 
   auto Language() const noexcept -> ts::Language;
   auto SetLanguage(ts::Language &&language) const noexcept -> bool;
-  auto ParseString(ts::Tree &&old_tree,
-                   const std::string_view string) const noexcept -> ts::Tree;
-  auto ParseStringEncoding(ts::Tree &&old_tree, const std::string_view string,
-                           const ts::InputEncoding encoding) const noexcept
+  [[nodiscard]] auto ParseString(ts::Tree &&old_tree,
+                                 const std::string_view string) const noexcept
+      -> ts::Tree;
+  [[nodiscard]] auto
+  ParseStringEncoding(ts::Tree &&old_tree, const std::string_view string,
+                      const ts::InputEncoding encoding) const noexcept
       -> ts::Tree;
 
   static constexpr uint64_t kNoTimeout = 0;
@@ -293,7 +295,7 @@ public:
 
   auto SetLogger(ts::LoggerPtr &&logger) noexcept -> void;
   auto AccessLogger() const noexcept -> const ts::LoggerPtr &;
-  auto TakeLogger() noexcept -> ts::LoggerPtr;
+  [[nodiscard]] auto TakeLogger() noexcept -> ts::LoggerPtr;
 
   static constexpr int kCloseFileDescriptor = -1;
   // If the `file_descriptor` is set to `kCloseFileDescriptor`, the file
