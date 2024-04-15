@@ -243,6 +243,9 @@ public:
 
   auto AsRaw() const noexcept -> const TSLanguage *const;
 
+  static auto FromRaw(const TSLanguage *const ts_language) noexcept
+      -> ts::Language;
+
 private:
   const TSLanguage *ts_language_;
 };

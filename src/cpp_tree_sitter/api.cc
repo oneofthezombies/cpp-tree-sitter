@@ -453,6 +453,11 @@ auto ts::Language::AsRaw() const noexcept -> const TSLanguage *const {
   return ts_language_;
 }
 
+auto ts::Language::FromRaw(const TSLanguage *const ts_language) noexcept
+    -> ts::Language {
+  return ts::Language{ts_language};
+}
+
 // TSParserDeleter
 // --------
 
