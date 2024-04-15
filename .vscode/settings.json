@@ -14,5 +14,6 @@
   },
   "[bazel]": {
     "editor.formatOnSave": true
-  }
+  },
+  "editor.rulers": [80]
 }
