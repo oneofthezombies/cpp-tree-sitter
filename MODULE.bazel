@@ -2,7 +2,7 @@
 cpp_tree_sitter
 """
 
-module(name = "cpp_tree_sitter", version = "0.1.4")
+module(name = "cpp_tree_sitter", version = "0.1.5")
 
 # Hedron's Compile Commands Extractor for Bazel
 # https://github.com/hedronvision/bazel-compile-commands-extractor

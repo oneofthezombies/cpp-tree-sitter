@@ -229,8 +229,13 @@ public:
   auto SymbolCount() const noexcept -> uint32_t;
   auto StateCount() const noexcept -> uint32_t;
   auto SymbolName(const ts::Symbol symbol) const noexcept -> std::string_view;
+
+  static constexpr ts::Symbol kSymbolNotFound = 0;
+
+  // If symbol is not found, it returns `kSymbolNotFound`.
   auto SymbolForName(const std::string_view name,
                      const bool is_named) const noexcept -> ts::Symbol;
+
   auto FieldCount() const noexcept -> uint32_t;
   auto FieldNameForId(const ts::FieldId field_id) const noexcept
       -> std::string_view;
