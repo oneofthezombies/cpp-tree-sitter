@@ -6,14 +6,17 @@
   ],
   "[cpp]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.rulers": [80]
   },
   "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.rulers": [80]
   },
-  "[bazel]": {
-    "editor.formatOnSave": true
-  },
-  "editor.rulers": [80]
+  "[cmake]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "cheshirekow.cmake-format",
+    "editor.rulers": [80]
+  }
 }

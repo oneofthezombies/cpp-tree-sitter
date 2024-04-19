@@ -19,18 +19,20 @@ already been consumed, a _Runtime assertion_ occurs in the `Debug` mode.
 - For type safety, rather than exposing `TSLogger`'s `void* payload` as is, 
 `ts::Logger` exposes its implementation as a virtual method.
 
-## For Contributors
-
-This project was developed based on Bazel.  
-Please ensure `bazel` command and after calling the `bazel --version` command, 
-check whether the version is higher than `7.0.0`.  
-
-You can get IDE support by running the command below.  
+## How to Build
 
 ```sh
-bazel run @hedron_compile_commands//:refresh_all
+# make build directory
+mkdir build && cd build
+
+# generate Makefile
+cmake ..
+
+# build libcpp_tree_sitter.a and libtree_sitter.a
+cmake --build .
+
+# optional) install headers and libraries to global
+sudo cmake --install . 
+# or install to other path e.g.) $HOME/.local
+# sudo cmake --install . --prefix=$HOME/.local
 ```
-
-For more information, please refer to the link below.  
-
-https://github.com/hedronvision/bazel-compile-commands-extractor
