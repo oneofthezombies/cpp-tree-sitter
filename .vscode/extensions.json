@@ -2,6 +2,8 @@
   "recommendations": [
     "llvm-vs-code-extensions.vscode-clangd",
     "usernamehw.errorlens",
-    "cheshirekow.cmake-format"
+    "cheshirekow.cmake-format",
+    "ms-vscode.cmake-tools",
+    "twxs.cmake"
   ]
 }
