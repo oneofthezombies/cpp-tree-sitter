@@ -25,7 +25,7 @@ already been consumed, a _Runtime assertion_ occurs in the `Debug` mode.
 # make build directory
 mkdir build && cd build
 
-# generate builg configs
+# generate build configs
 cmake .. -G Ninja
 
 # build libcpp_tree_sitter.a and libtree_sitter.a
