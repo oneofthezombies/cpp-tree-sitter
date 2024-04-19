@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.29)
-project(cpp_tree_sitter VERSION 0.1.5)
+project(cpp_tree_sitter VERSION 0.2.0)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
