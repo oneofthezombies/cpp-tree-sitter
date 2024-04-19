@@ -25,14 +25,15 @@ already been consumed, a _Runtime assertion_ occurs in the `Debug` mode.
 # make build directory
 mkdir build && cd build
 
-# generate Makefile
-cmake ..
+# generate builg configs
+cmake .. -G Ninja
 
 # build libcpp_tree_sitter.a and libtree_sitter.a
 cmake --build .
 
-# optional) install headers and libraries to global
-sudo cmake --install . 
-# or install to other path e.g.) $HOME/.local
-# sudo cmake --install . --prefix=$HOME/.local
+# optional) install headers and libraries to the prefix path e.g.) $HOME/.local
+sudo cmake --install . --prefix=$HOME/.local
+
+# or install to global e.g.) /usr/local/include, /usr/local/lib
+# sudo cmake --install . 
 ```
