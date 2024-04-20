@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(cpp_tree_sitter VERSION 0.2.3)
+project(cpp_tree_sitter VERSION 0.2.4)
 
 include(GNUInstallDirs)
 
